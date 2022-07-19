@@ -1,7 +1,15 @@
+/*
 $(document).ready(function(){
-  swal("alertta");
+ $(document).click(function(){
 
+    });
   
+});
+*/
+
+
+window.addEventListener("load",function(){
+  swal("hello");
 });
 
 
