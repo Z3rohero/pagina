@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald')
+
+/*Aca le estamos danto estilo todo el cuerpo*/
+*{
+margin:0px;
+padding:0px;
+}
+
+body{
+  height: 100%;
+  width: 100%
+  overflow: hidden;
+  background: #000;
+}
+
+.contennt{
+  height:100% ;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+
+.content .text{
+  color:#fff;
+  font:-weight:700px;
+  font-size: 45px;
+  transform:scale(2);
+  letter-spacing: 2px;
+  padding: 30px;
+}
+.contennt .text:before,
+.content .text:after{
+  position: absolute;
+  content: attr(data-text);
+  padding:30px;
+  width:100%;
+  height:100%;
+  top: 0;
+  left:0;
+  background: #000;
+  color: #fff;
+  overflow:hidden;
+  
+  
+}
+.contennt .text:before{
+  left: 3px;
+  text-shadow: -2px 0 red;
+    animation: glitch-1 2s 0s linear reverse infinite;
+  
+}
+
+.contennt .text:after{
+  left: -3px;
+  text-shadow: -2px 0 blue;
+  animation: glitch-2 2s 0s linear reverse infinite;
+  
+}
+
+@keyframes glitch-1{
+  @keyframes glitch-2 {
+  1%{
+    transform: rotateX(10deg) skewX(70deg);
+  }
+  2%{
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+  
+  
+}
