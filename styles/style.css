@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Pirata One';
+    src: url('../styles/font/PirataOne-Regular.ttf');
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+.font{
+  font-family:'Pirata One';
+}
 
 html, body {
   height: 100%;
@@ -18,6 +25,4 @@ html, body {
   border-bottom:2px solid #eee;
   
 }
-.font{
-  font-family: 'Pirata One', cursive;
-}
+
